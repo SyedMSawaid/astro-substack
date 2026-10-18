@@ -1,0 +1,69 @@
+{
+  "name": "@syedmsawaid/astro-substack",
+  "version": "0.1.0",
+  "description": "Astro integration that backs up your Substack posts as local Markdown and exposes them as a content collection.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Syed Muhammad Sawaid <smsawaid3@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedmsawaid/astro-substack.git"
+  },
+  "homepage": "https://github.com/syedmsawaid/astro-substack#readme",
+  "bugs": {
+    "url": "https://github.com/syedmsawaid/astro-substack/issues"
+  },
+  "keywords": [
+    "astro-integration",
+    "astro-component",
+    "withastro",
+    "astro",
+    "substack",
+    "newsletter",
+    "backup",
+    "markdown",
+    "content-collections"
+  ],
+  "engines": {
+    "node": ">=18.20.8"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./collection": {
+      "types": "./dist/collection.d.ts",
+      "default": "./dist/collection.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "npm run build && node --test test/",
+    "prepublishOnly": "npm test"
+  },
+  "peerDependencies": {
+    "astro": "^5.0.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/turndown": "^5.0.5",
+    "astro": "^5.0.0",
+    "typescript": "^5.6.0"
+  }
+}
