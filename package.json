@@ -7,11 +7,11 @@
   "author": "Syed Muhammad Sawaid <smsawaid3@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syedmsawaid/astro-substack.git"
+    "url": "git+https://github.com/SyedMSawaid/astro-substack.git"
   },
-  "homepage": "https://github.com/syedmsawaid/astro-substack#readme",
+  "homepage": "https://github.com/SyedMSawaid/astro-substack#readme",
   "bugs": {
-    "url": "https://github.com/syedmsawaid/astro-substack/issues"
+    "url": "https://github.com/SyedMSawaid/astro-substack/issues"
   },
   "keywords": [
     "astro-integration",
